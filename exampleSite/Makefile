@@ -25,8 +25,6 @@ prettier:
 .PHONY: dev
 dev:
 	brew install --quiet awscli hugo prettier yamllint
-	git submodule init
-	git submodule update
 
 .PHONY: lint
 lint:
