@@ -1,0 +1,13 @@
+---
+# baseURL: http://test.vollgas.net/
+languageCode: en-us
+title: Vollgas Minimal Theme Example Site
+themesDir: "../../"
+theme: hugo-theme-vollgas-minimal
+copyright: 2023 vollgas.net
+# Using `uglyURLs: true` to build URLs compatible with Cloudfront
+uglyURLs: true
+
+params:
+  gtmId: GTM-REPLACE
+  vpixelAppId: 9999
