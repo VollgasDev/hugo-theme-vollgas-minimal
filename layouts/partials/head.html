@@ -37,32 +37,6 @@
 
   <meta name="description" content="{{ .Description }}" />
 
-  <style media="screen" type="text/css">
-    .emphasis {
-      color: #ed6232;
-    }
-    .secondary {
-      color: #785c3a;
-    }
-    a {
-      color: #ed6232;
-    }
-    body {
-      color: #393b38;
-    }
-    table {
-      border-collapse: collapse;
-    }
-    table,
-    th,
-    td {
-      border: 1px solid black;
-    }
-    td {
-      padding: 5px;
-    }
-  </style>
-
   <!-- Icons for browser tabs, etc. -->
   <!-- ****** faviconit.com favicons ****** -->
   <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
@@ -158,4 +132,12 @@
     content="/images/favicons/browserconfig.xml"
   />
   <!-- ****** faviconit.com favicons ****** -->
+
+  {{ $vollgasSass := resources.Get "sass/vollgas.sass" }} {{ $vollgasStyle :=
+  $vollgasSass | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link
+    rel="stylesheet"
+    href="{{ $vollgasStyle.Permalink }}"
+    integrity="{{ $vollgasStyle.Data.Integrity }}"
+  />
 </head>
