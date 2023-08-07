@@ -1,4 +1,1 @@
-# robots.txt for http://test.vollgas.net/
-
-User-agent: *
-Disallow: /
+# robots.txt
