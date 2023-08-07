@@ -136,7 +136,7 @@
 $vollgasSass | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link
   rel="stylesheet"
-  href="{{ $vollgasStyle.Permalink }}"
+  href="{{ $vollgasStyle.RelPermalink }}"
   integrity="{{ $vollgasStyle.Data.Integrity }}"
 />
 {{- partial "headCustom.html" -}}
