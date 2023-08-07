@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - randomString should not be part of theme
 - robots incorrect for theme
+- randomString and dateTime not needed in theme
 
 ## [0.0.2] - 2023-08-06
 
