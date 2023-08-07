@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.2.0] - 2023-08-07
 
+### Fixed
+
+- 404 reference to home
+
+## [0.2.0] - 2023-08-07
+
 ### Added
 
 - custom blocks in each of three major partials - head, header, footer
