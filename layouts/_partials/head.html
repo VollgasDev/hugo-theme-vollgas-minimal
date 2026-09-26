@@ -133,7 +133,7 @@
 <!-- ****** faviconit.com favicons ****** -->
 
 {{ $vollgasSass := resources.Get "sass/vollgas.sass" }} {{ $vollgasStyle :=
-$vollgasSass | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+$vollgasSass | css.Sass | resources.Minify | resources.Fingerprint }}
 <link
   rel="stylesheet"
   href="{{ $vollgasStyle.RelPermalink }}"
